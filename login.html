@@ -19,7 +19,7 @@
       integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
       crossorigin="anonymous"
     ></script>
-    <title>Home page</title>
+    <title>Login page</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
 
@@ -86,39 +86,39 @@
         </div>
       </nav>
     </header>
+    <br> <br>
 
+    <div class="registration-form">
+      <h2>Login in just a few secs!</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Username</label>
+          <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="employee-id">Employee ID</label>
+          <input type="text" id="employee-id" placeholder="Enter your employee ID" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter your password" required>
+        </div>
+        <button onclick="window.location.href = 'employeePage.html';">
+          Click here to login
+        </button>
+      </form>
+    </div>
+    <br> <br> 
     
-    <form class="form-register">
-      <label>Username:</label><br />
-      <input type="text" required /><br /><br />
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 CG Infinity. All rights reserved.</p> 
+    </div>
+    <div>
+      <h6>Contact us on ~</h6>
+      <p>Mail: cginfo@gmail.com or Insta: cginfinity_1998</p>
+    </div>
+  </footer> 
 
-      <label>Employee Id:</label><br />
-      <input type="text" required /><br /><br />
-
-      <label>Password:</label><br />
-      <input type="password" required /><br /><br />
-
-      <label>
-        <input type="checkbox" />
-        Remember me
-      </label>
-      <br />
-      <br />
-
-      <button onclick="window.location.href = 'employeePage.html';">
-        Login
-      </button>
-      <button onclick="window.location.href = 'index.html';">
-        Cancel process
-      </button>
-    </form>
-
-    <!-- <footer>
-      <h3>Contact us on ~</h3>
-      <p>Mail: cginfo@gmail.com</p>
-      <p>Ph no: 1234567890</p>
-      <p>Insta: cginfinity_1998</p>
-      <p>Twitter: cginfi98</p>
-    </footer> -->
   </body>
 </html>
