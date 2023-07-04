@@ -87,7 +87,7 @@
 
     <div class="registration-form">
       <h2>Login in just a few secs!</h2>
-      <form>
+      <form action="employeePage.html">
         <div class="form-group">
           <label for="name">Username</label>
           <input type="text" id="name" placeholder="Enter your name" required>
@@ -100,7 +100,7 @@
           <label for="password">Password</label>
           <input type="password" id="password" placeholder="Enter your password" required>
         </div>
-        <button onclick="window.location.href = 'employeePage.html';">
+        <button type="submit" id="login">
           Click here to login
         </button>
       </form>
@@ -116,6 +116,24 @@
       <p>Mail: cginfo@gmail.com or Insta: cginfinity_1998</p>
     </div>
   </footer> 
+
+  <script>
+    (function() {
+    $('form > input').keyup(function() {
+        var empty = false;
+        $('form  > input').each(function() {
+            if ($(this).val() == '') {
+                empty = true;
+            }
+        });
+        if (empty) {
+            $('#login').attr('disabled', 'disabled'); // updated according to http://stackoverflow.com/questions/7637790/how-to-remove-disabled-attribute-with-jquery-ie
+        } else {
+            $('#login').removeAttr('disabled'); // updated according to http://stackoverflow.com/questions/7637790/how-to-remove-disabled-attribute-with-jquery-ie
+        }
+    });
+})()
+  </script>
 
   </body>
 </html>
